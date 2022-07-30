@@ -1,8 +1,13 @@
 <template>
+  <input type="text">
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+    name:'Search'
 }
 </script>
+
+<style>
+
+</style>
