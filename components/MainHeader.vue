@@ -32,9 +32,9 @@
     </button>
 
     <div class="hidden md:flex px-4">
-      <a href="/">
-        <logo class="h-8 w-8" />
-      </a>
+      <nuxt-link to="/">
+        <img src="https://www.insperity.com/wp-content/uploads/document_HR__1200x600.png" class="h-10 w-10 rounded-full" />
+      </nuxt-link>
     </div>
 
     <!-- search -->
