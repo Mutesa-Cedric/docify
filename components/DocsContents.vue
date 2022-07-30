@@ -6,11 +6,11 @@
       </h3>
 
       <nuxt-link to="doc-example" class="flex items-center pb-3 pr-5 text-gray-600 hover:text-gray-700">
-        Link 1
+        docs example
       </nuxt-link>
 
       <nuxt-link to="youtube-example" class="flex items-center pb-3 pr-5 text-gray-600 hover:text-gray-700">
-        Link 2
+        youtube example
       </nuxt-link>
     </div>
   </div>
