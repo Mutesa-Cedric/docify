@@ -1,6 +1,6 @@
 ---
 title: 'YouTube Example'
-description: ''
+description: 'Youtube embed example'
 image: ''
 video: 'BwuLxPH8IDs'
 

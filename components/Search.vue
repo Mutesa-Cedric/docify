@@ -30,8 +30,9 @@
                              class="block text-sm col-span-2 py-2 transition ease-in-out duration-150"
                              :class="{ 'bg-blue-900' : isCurrentIndex(index) }"
                   >
-                    <div class="px-2" @mouseover="highlightedIndex = index">
+                    <div class="px-2 mx-4" @mouseover="highlightedIndex = index">
                       <ais-highlight attribute="title" :hit="hit" class="block text-blue-300 font-medium" />
+                      <ais-highlight attribute="description" :hit="hit" class="block text-gray-100 py-3 font-medium" />
                       <ais-snippet attribute="bodyPlainText" :hit="hit" class="block text-gray-100 font-base" />
                     </div>
                   </nuxt-link>
