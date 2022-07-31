@@ -4,7 +4,7 @@
     index-name="doc"
   >
     <ais-configure
-      :attributesToSnippet="['bodyPlainText']"
+      :attributesToSnippet="['bodyPlainText']" 
       :hits-per-page.camel="5"
     >
       <ais-autocomplete v-click-outside="onClickOutside">
@@ -22,11 +22,11 @@
             @keydown.down.prevent="highlightNext(indices[0].hits.length)"
             @keydown.enter="goToDoc(indices)"
           >
-          <div v-show="currentRefinement.length && showResults" class="absolute z-10 transform mt-3 px-2 w-[60vw] sm:px-0">
+          <div v-show="currentRefinement.length && showResults" class="absolute z-10 transform mt-3 px-2 w-w-md sm:px-0">
             <div class="rounded-md shadow-lg overflow-hidden">
-              <div class="relative grid gap-6 bg-gray-900 text-gray-100 px-5 py-6 sm:gap-8 sm:p-8">
+              <div v-show="currentRefinement" class="relative grid gap-6 bg-gray-900 text-gray-100 px-5 py-6 sm:gap-8 sm:p-8">
                 <div v-for="section in indices" :key="section.objectID" class="divide-y divide-blue-900">
-                  <nuxt-link to="#" v-for="(hit, index) in section.hits" :key="hit.objectID"
+                  <nuxt-link :to="hit.objectID" v-for="(hit, index) in section.hits" :key="hit.objectID"
                              class="block text-sm col-span-2 py-2 transition ease-in-out duration-150"
                              :class="{ 'bg-blue-900' : isCurrentIndex(index) }"
                   >
